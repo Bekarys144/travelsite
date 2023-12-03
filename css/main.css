@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.hero {
+    width: 100%;
+    background-color: #FEFAF5;
+}
+
+.hero-container {
+    padding: 60px 8%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.hero-column {
+    width: 50%;
+}
+
+.hero-column-image {
+    width: 45%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-column h2 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 5%;
+    color: #335576;
+}
+
+.hero-text {
+    margin-bottom: 5%;
+    color: #335576;
+}
+
+button {
+    border-radius: 20px;
+    padding: 5px 40px;
+    color: white;
+    background-color: #DB7A4E;
+    border: none;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #335576;
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(0.96)
+}
+
+@media (max-width: 1000px) {
+    .hero-column {
+        width: 45%;
+    }
+    
+    .hero-column h2 {
+        font-size: 2rem;
+    }
+
+    .hero-column-image {
+        width: 50%;
+    }
+}
+
+.hero-image-container {
+    width: 75%;
+    height: auto;
+}
+
+.hero-image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.recommendations {
+    width: 100%;
+    background-color:  #FFFFFF;
+}
+
+.recommendations-heading {
+    padding: 60px 8%;
+}
+
+.recommendations-heading h4 {
+    font-size: 1.5rem;
+}
+
+.destination-container {
+    max-width: 70vw;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 60px;
+    justify-content: space-around;
+}
+
+.destination-link-hawaii {
+    min-width: 20vw;
+    height: 600px;
+    background-image: url('../assets/images/hawaii.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: end;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease; 
+}
+
+.destination-link-iceland {
+    min-width: 20vw;
+    height: 600px;
+    background-image: url('../assets/images/iceland.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: end;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease; 
+}
+
+.destination-link-greece {
+    min-width: 20vw;
+    height: 600px;
+    background-image: url('../assets/images/greece.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: end;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease; 
+}
+
+.destination-link-hawaii:hover, .destination-link-iceland:hover, .destination-link-greece:hover {
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+    transform:scale(1.1);
+}
+
+.destination-link-hawaii:active, .destination-link-iceland:active, .destination-link-greece:active {
+    transform: scale(0.98)
+}
+
+a {
+    text-decoration: none;
+}
+
+.destination-title {
+    color: white;
+    font-size: 1.5rem;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    font-weight: 800;
+}
+
+.destination-card-image {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    border-radius: 20px;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 764px) {
+    .destination-container {
+        flex-direction: column;
+    }
+    .destination-link-hawaii, .destination-link-iceland, .destination-link-greece {
+        margin-bottom: 2vh;
+        height: 500px;
+    }
+}

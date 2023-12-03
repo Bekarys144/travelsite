@@ -1,0 +1,62 @@
+.main-section {
+    background-color: #FEFAF5;
+    width: 100%;
+}
+
+.message {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.message h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding-bottom: 5vh;
+}
+
+.message h3 {
+    font-size: 2rem;
+    font-weight: 300;
+    padding-bottom: 5vh;
+}
+
+form {
+    background-color: #FFFFFF;
+    padding-top: 2.5vh;
+}
+
+table {
+    display: flex;
+    text-align: left;
+    justify-content: center;
+}
+
+.question {
+    font-size: 1.5rem;
+    margin-bottom: 0.7%;
+}
+
+.button-container {
+    margin: 2.5vh;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    border-radius: 20px;
+    padding: 5px 40px;
+    color: white;
+    background-color: #DB7A4E;
+    border: none;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #335576;
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(0.96)
+}
